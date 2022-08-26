@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/mockfrontend_Priyal/static/css/main.20ba02f7.css",
+    "main.js": "/mockfrontend_Priyal/static/js/main.523ea245.js",
+    "static/js/787.8e17e84e.chunk.js": "/mockfrontend_Priyal/static/js/787.8e17e84e.chunk.js",
+    "static/media/team.png": "/mockfrontend_Priyal/static/media/team.28fbdadb8a1926267a35.png",
+    "static/media/myself.png": "/mockfrontend_Priyal/static/media/myself.3b94f4fa80f4afda6888.png",
+    "index.html": "/mockfrontend_Priyal/index.html",
+    "main.20ba02f7.css.map": "/mockfrontend_Priyal/static/css/main.20ba02f7.css.map",
+    "main.523ea245.js.map": "/mockfrontend_Priyal/static/js/main.523ea245.js.map",
+    "787.8e17e84e.chunk.js.map": "/mockfrontend_Priyal/static/js/787.8e17e84e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20ba02f7.css",
+    "static/js/main.523ea245.js"
+  ]
+}
