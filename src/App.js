@@ -4,14 +4,14 @@ import MainPage from './Components/MainPage.js'
 import WorkSpace from './Components/WorkSpace.js'
 import Use from './Components/Use.js'
 import Success from './Components/Success.js'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Scroll from './Components/Scroll.js'
 
 
 const App=()=>{
     return (
-        
-        <BrowserRouter>
+
+        <HashRouter>
             <div className="imageContainer">
                 <img src={require("./Images/logo.png")} alt="Logo" height="40" />
             </div>
@@ -29,7 +29,7 @@ const App=()=>{
                     </Route>
                 </Routes>
             </div>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
