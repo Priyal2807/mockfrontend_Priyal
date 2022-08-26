@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import MainPage from './Components/MainPage.js'
+import WorkSpace from './Components/WorkSpace.js'
+import Use from './Components/Use.js'
+import Success from './Components/Success.js'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Scroll from './Components/Scroll.js'
+
+
+const App=()=>{
+    return (
+        
+        <BrowserRouter>
+            <div className="imageContainer">
+                <img src={require("./Images/logo.png")} alt="Logo" height="40" />
+            </div>
+            <Scroll/>
+            <div className="App">
+                
+                <Routes>
+                    <Route exact path="/" element={<MainPage />}>
+                    </Route>
+                     <Route exact path="/workspace" element={<WorkSpace />}>
+                    </Route>
+                    <Route exact path="/use" element={<Use/>}>
+                    </Route>
+                    <Route exact path="/success" element={<Success />}>
+                    </Route>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    )
 }
 
 export default App;
