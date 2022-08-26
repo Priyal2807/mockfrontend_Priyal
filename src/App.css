@@ -1,106 +1,38 @@
-@import url('https://rsms.me/inter/inter.css');
-
 .App {
-    font-family: 'Inter', sans-serif;
+  text-align: center;
 }
 
-.mainparent, .wsparent, .uparent, .sparent {
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.mainpageForm input, .wsform input, .uform input {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    border-radius: 0.5em;
-    border: grey 1px solid;
-    height: 4vh;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.mainpageForm label, .mainparent p:nth-of-type(2), .wsform label, .wsparent p:nth-of-type(2), .uform label, .uparent p:nth-of-type(2), .sparent p:nth-of-type(2) {
-    font-size: 0.8em;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.mainparent p:nth-of-type(1), .wsparent p:nth-of-type(1), .uparent p:nth-of-type(1), .sparent p:nth-of-type(1) {
-    font-size: 1.2em;
-    font-weight: 800
+.App-link {
+  color: #61dafb;
 }
 
-.imageContainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 15vh;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
-
-.mainpageForm button, .wsform button, .uform button, .sparent button {
-    background-color: #5F73F1;
-    text-align: center;
-    border-radius: 0.5em;
-    color: white;
-    border: none;
-    height: 6vh;
-}
-
-.mainpageForm button, .mainpageForm input, .wsform button, .wsform input, .uform button, .uform input, .sparent button {
-    width: 25vw;
-}
-
-.typeofspace {
-    display: flex;
-    justify-content: center;
-}
-
-    .typeofspace input {
-        appearance: none;
-        width: 0vw;
-        border: none;
-    }
-
-    .typeofspace img {
-        border: 1px grey solid;
-        border-radius: 0.5em;
-        margin-bottom: 2em;
-    }
-
-        .typeofspace img:hover {
-            border: 3px solid green;
-        }
-
-.scrolldivparent {
-    display: flex;
-    justify-content: center;
-}
-
-.scrolldiv {
-    width: 30vw;
-    height: 20vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-    .scrolldiv span {
-        border-radius: 50%;
-        height: 2em;
-        width: 2em;
-        line-height: 2em;
-        text-align: center;
-        color: black;
-        border: 1px solid lightgrey;
-    }
-
-        .scrolldiv span:nth-child(1) {
-            background-color: #5F73F1;
-            color:white;
-        }
-
-        .scrolldiv span + div {
-            height: 1px;
-            background: black;
-            width: 20%
-        }
